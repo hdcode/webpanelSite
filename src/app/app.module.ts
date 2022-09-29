@@ -11,6 +11,11 @@ import { PrixComponent } from './prix/prix.component';
 import { ContactComponent } from './contact/contact.component';
 import { FeaturesComponent } from './features/features.component';
 
+import { ButtonModule } from "primeng/button";
+import {CheckboxModule} from 'primeng/checkbox';
+import { FormsModule } from '@angular/forms';
+import { ChipModule } from 'primeng/chip';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +29,11 @@ import { FeaturesComponent } from './features/features.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule,
+    CheckboxModule,
+    FormsModule,
+    ChipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
